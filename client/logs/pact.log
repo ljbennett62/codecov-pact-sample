@@ -1,0 +1,56 @@
+I, [2022-01-17T17:20:25.933623 #7346]  INFO -- : Registered expected interaction GET /users
+D, [2022-01-17T17:20:25.933790 #7346] DEBUG -- : {
+  "description": "a request for users",
+  "providerState": "there are users",
+  "request": {
+    "method": "GET",
+    "path": "/users"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8"
+    },
+    "body": {
+      "json_class": "Pact::ArrayLike",
+      "contents": {
+        "slug": "julien",
+        "fullname": "Julien Bras",
+        "twitter": "_julbrs"
+      },
+      "min": 1
+    }
+  },
+  "metadata": null
+}
+I, [2022-01-17T17:20:25.941727 #7346]  INFO -- : Received request GET /users
+D, [2022-01-17T17:20:25.941818 #7346] DEBUG -- : {
+  "path": "/users",
+  "query": "",
+  "method": "get",
+  "headers": {
+    "Host": "localhost:1235",
+    "Accept-Encoding": "gzip, deflate",
+    "Connection": "close",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2022-01-17T17:20:25.942146 #7346]  INFO -- : Found matching response for GET /users
+D, [2022-01-17T17:20:25.942245 #7346] DEBUG -- : {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "body": {
+    "json_class": "Pact::ArrayLike",
+    "contents": {
+      "slug": "julien",
+      "fullname": "Julien Bras",
+      "twitter": "_julbrs"
+    },
+    "min": 1
+  }
+}
+I, [2022-01-17T17:20:25.949177 #7346]  INFO -- : Verifying - interactions matched
+I, [2022-01-17T17:20:25.952341 #7346]  INFO -- : Cleared interactions
+I, [2022-01-17T17:20:25.955907 #7346]  INFO -- : Writing pact for providerName to /Users/laurabennett/2021/TRAINING/Codecov/client/pacts/consumername-providername.json

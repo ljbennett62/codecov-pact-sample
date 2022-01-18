@@ -1,0 +1,23 @@
+{
+  "name": "service",
+  "version": "1.0.0",
+  "description": "provider service",
+  "main": "index.js",
+  "repository": "codecov-provider-testing",
+  "author": "Laura Bennett",
+  "license": "MIT",
+  "private": null,
+  "dependencies": {
+    "@pact-foundation/pact": "^9.17.2",
+    "chai": "^4.3.4",
+    "chai-as-promised": "^7.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "get-port": "^5.1.1",
+    "mocha": "^9.1.4"
+  },
+  "scripts": {
+    "pacts": "mocha ./test/user.spec.js --timeout 30000 ",
+    "start": "node index.js"
+  }
+}
